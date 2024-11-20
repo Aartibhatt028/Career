@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Openings</title>
+    <link rel="stylesheet" href="career.css">
+</head>
+<body>
+
+<!-- Navbar Section -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="logo.png" alt="Company Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Career Section -->
+<section class="career-section">
+    <div class="container">
+        <h1>Job Openings</h1>
+        <p>Explore our current job listings and apply today!</p>
+
+        <!-- Job Listings (3 jobs per row) -->
+        <div class="job-listings">
+            <!-- Job Listing 1 -->
+            <div class="job-listing">
+                <h3 class="job-title">Network Engineer</h3>
+                <p class="job-summary">LLTPL is seeking a skilled Network Engineer to join our team. If you are passionate about network infrastructure and enjoy solving complex challenges, we want to hear from you!
+                </p>
+                <button class="btn-readmore" onclick="openModal('Network Engineer')">Read More</button>
+            </div>
+
+            <!-- Job Listing 2 -->
+            <div class="job-listing">
+                <h3 class="job-title">Tele-Caller / Counsellor</h3>
+                <p class="job-summary">We are seeking a motivated and experienced Tele- Caller / Program Counsellor to join our team. The ideal candidate will have a strong background in client communication and a knack for understanding customer needs. This role involves reaching out to clients, providing information about our programs, and ensuring an excellent customer experience.</p>
+                <button class="btn-readmore" onclick="openModal('Tele-Caller / Counsellor')">Read More</button>
+            </div>
+
+            <!-- Job Listing 3 -->
+            <div class="job-listing">
+                <h3 class="job-title">Ad-Crafter (content creation)</h3>
+                <p class="job-summary">LLTPL are looking for a creative Ad-Crafter to design engaging advertisements that capture attention and drive interest. The ideal candidate will have a strong background in content creation, marketing, and visual design.</p>
+                <button class="btn-readmore" onclick="openModal('Ad-Crafter (content creation)')">Read More</button>
+            </div>
+
+            <!-- Job Listing 4 -->
+            <div class="job-listing">
+                <h3 class="job-title">Data Entry Operator</h3>
+                <p class="job-summary">We are seeking a detail-oriented Data Entry Operator with strong expertise in MS Office and a solid understanding of internet technologies. The ideal candidate will have at least 2 years of experience in data entry and demonstrate proficiency in utilizing AI tools to enhance efficiency.</p>
+                <button class="btn-readmore" onclick="openModal('Data Entry Operator')">Read More</button>
+            </div>
+
+            <!-- Job Listing 5 -->
+            <div class="job-listing">
+                <h3 class="job-title">Digital marketing</h3>
+                <p class="job-summary">LLTPL seeking an experienced Digital Marketer to join our team. If you have a passion for driving online growth and a knack for developing effective digital strategies, we want to hear from you!</p>
+                <button class="btn-readmore" onclick="openModal('Digital marketing')">Read More</button>
+            </div>
+
+            <!-- Job Listing 6 -->
+            <div class="job-listing">
+                <h3 class="job-title">Graphic Designer</h3>
+                <p class="job-summary">LLTPL is on the lookout for a creative and talented Graphic Designer to join our team. If you have a passion for visual storytelling and a keen eye for detail, we want to hear from you!</p>
+                <button class="btn-readmore" onclick="openModal('Graphic Designer')">Read More</button>
+            </div>
+
+            <!-- Job Listing 7 -->
+            <div class="job-listing">
+                <h3 class="job-title">Senior Full Stack Web Developer</h3>
+                <p class="job-summary">LLTPL is a dynamic and innovative tech company committed to delivering high-quality web solutions. We are looking for a skilled Senior Full Stack Web Developer to join our talented team and contribute to exciting projects that make a difference</p>
+                <button class="btn-readmore" onclick="openModal('Senior Full Stack Web Developer')">Read More</button>
+            </div>
+
+            <!-- Job Listing 8 -->
+            <div class="job-listing">
+                <h3 class="job-title">UI/UX Designer</h3>
+                <p class="job-summary">LLTPL is seeking a creative and detail-oriented UI/UX Designer to enhance our user experience and interface design. If you have a passion for creating intuitive and engaging designs, we want to hear from you!.</p>
+                <button class="btn-readmore" onclick="openModal('UI/UX Designer')">Read More</button>
+            </div>
+
+            <!-- Job Listing 9 -->
+            <div class="job-listing">
+                <h3 class="job-title">Animator/Video Editor</h3>
+                <p class="job-summary">LLTPL is looking for a talented Animator/Video Editor to join our creative team. If you have a passion for storytelling through animation and video editing, we want to hear from you!</p>
+                <button class="btn-readmore" onclick="openModal('Animator/Video Editor')">Read More</button>
+            </div>
+
+            <!-- Job Listing 10 -->
+            <div class="job-listing">
+                <h3 class="job-title">Junior Web Developer</h3>
+                <p class="job-summary">LLTPL is looking for a motivated Junior Web Developer to join our team! If you have experience in PHP and Python, and a passion for web development, we want to hear from you.</p>
+                <button class="btn-readmore" onclick="openModal('Junior Web Developer')">Read More</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Modal -->
+<div id="jobModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle">Job Title</h2>
+        <p id="modalDescription">Job description will go here.</p>
+        <button class="apply-now-btn">Apply Now</button>
+        
+    </div>
+</div>
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Latitude longtitude Technologies. All rights reserved.</p>
+</footer>
+
+<script src="career.js"></script>
+</body>
+</html>
